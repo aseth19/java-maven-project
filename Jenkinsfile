@@ -2,8 +2,8 @@ pipeline {
     agent any  // Run the pipeline on any available agent
 
     environment {
-        MAVEN_HOME = tool name: 'Maven', type: 'Tool'  // Use the Maven tool configured in Jenkins
-        JAVA_HOME = tool name: 'JDK11', type: 'Tool'  // Use the JDK tool configured in Jenkins
+        JAVA_HOME = '/usr/lib/jvm/java-21-amazon-corretto'  // Adjust this with your path
+        MAVEN_HOME = tool name: 'Maven', type: 'Tool'
     }
 
     stages {
